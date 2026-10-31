@@ -1,0 +1,15 @@
+# SOC Shift Simulator - case report template
+# `sim start` drops a copy of this into each case folder. Fill it from your
+# investigation, then: sim grade --case <dir>
+# Blank = unanswered (0 points). If you conclude an artifact does not exist,
+# write 'none' (or 0 for exfil_bytes) explicitly.
+
+analyst: your-name
+scenario:                     # 1, 2, or 3
+patient_zero_host:            # e.g. WS-07
+initial_access_time:          # ISO, e.g. 2026-10-20T08:17:00
+compromised_accounts:         # one '- name' per line
+c2_ip:                        # C2 IP (not the attacker's source IP), or none
+c2_domain:                    # domain or none
+attack_techniques:            # MITRE ATT&CK v20 IDs, one '- Txxxx.yyy' per line
+exfil_bytes:                  # integer bytes, or 0 if none
